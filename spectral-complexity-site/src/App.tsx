@@ -8,7 +8,7 @@ function App() {
 
   return (
     <ChakraProvider value={defaultSystem}>
-      <BrowserRouter>
+      <BrowserRouter basename="/spectral-complexity">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
