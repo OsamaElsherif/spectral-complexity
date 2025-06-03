@@ -26,7 +26,9 @@ The approach draws from:
 ## 🚀 Live Demo
 
 👉 [View the Interactive Site](https://osamaelsherif.github.io/spectral-complexity/)  
-📝 [Read the Preprint on ResearchGate](https://www.researchgate.net/publication/392202309)
+📝 [Read the 1st Preprint on ResearchGate](https://www.researchgate.net/publication/392202309)
+📝 [Read the 2nd Preprint on ResearchGate](https://doi.org/10.13140/RG.2.2.31262.65605)
+
 
 ---
 
