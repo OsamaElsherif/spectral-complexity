@@ -8,16 +8,22 @@ export default function ComingSoonSection() {
             <ListRoot gap={6}>
                 <PaperListItem 
                     number={2} 
-                    title="Spectral Metrics Across k-SAT" 
+                    bg="rgb(135, 77, 171)"
+                    color="white"
+                    title="Spectral Metrics Across k-SAT - DONE ☑️" 
                 />
                 
                 <PaperListItem 
                     number={3} 
+                    bg="blue"
+                    color="white"
                     title="QBF and Quantifier Induced Spectral Deformation" 
                 />
                 
                 <PaperListItem 
                     number={4} 
+                    bg="blue"
+                    color="white"
                     title="Neural Network Learnability via Spectral Topology" 
                 />
             </ListRoot>
@@ -25,15 +31,15 @@ export default function ComingSoonSection() {
     );
 }
 
-function PaperListItem({ number, title }: { number: number; title: string }) {
+function PaperListItem({ number, title, bg, color }: { number: number; title: string, bg: string, color: string }) {
     return (
         <ListItem display="flex" alignItems="flex-start">
             <Box 
                 as="span" 
                 mr={3} 
                 fontSize="sm" 
-                bg="blue.700" 
-                color="white" 
+                bg={bg}
+                color={color} 
                 px={2} 
                 py={1} 
                 borderRadius="md"

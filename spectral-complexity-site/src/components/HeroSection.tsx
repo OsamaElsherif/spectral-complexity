@@ -53,17 +53,20 @@ export default function HeroSection() {
           textAlign={{ base: "center", md: "left" }}
         >
           <Stack
-            spacing={4}
+            gap={4}
             mb={6}
             direction="row"
             justify={{ base: "center", md: "flex-start" }}
             flexWrap="wrap"
           >
             <Badge colorScheme="purple" px={4} py={1} borderRadius="md">
-              Endorsed by Researchers
+              Recommended by Researchers
             </Badge>
             <Badge colorScheme="purple" px={4} py={1} borderRadius="md">
-              50+ Reads in 24h
+              50+ Reads compiined
+            </Badge>
+            <Badge bg={"rgb(135, 77, 171)"} color={"#fff"}  px={4} py={1} borderRadius="md">
+              2nd preprint paper published 
             </Badge>
           </Stack>
 
@@ -73,11 +76,13 @@ export default function HeroSection() {
             lineHeight="shorter"
             maxW="3xl"
           >
-            Spectral Geometry of Boolean Satisfiability
+            Spectral Topology of Boolean Satisfiability
+            {/* Spectral Geometry of Boolean Satisfiability */}
           </Heading>
 
           <Text fontSize={{ base: "md", md: "lg" }} mt={4} maxW="2xl">
-            A Fourier-Walsh Perspective on Complexity Landscapes
+          Clause-Arity Deformations and the Manifold Geometry of Logical Hardness, Complexity, and Solvability
+            {/* A Fourier-Walsh Perspective on Complexity Landscapes */}
           </Text>
 
           <ButtonLink
@@ -87,7 +92,8 @@ export default function HeroSection() {
             _hover={{ bg: "#fff" }}
             color="white"
             px={6}
-            to="https://www.researchgate.net/publication/392202309"
+            // to="https://www.researchgate.net/publication/392202309"
+            to="http://dx.doi.org/10.13140/RG.2.2.31262.65605"
             target="_blank"
           >
             Read the Preprint

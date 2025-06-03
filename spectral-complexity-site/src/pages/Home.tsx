@@ -4,6 +4,7 @@ import AboutPaperSection from "../components/AboutPaperSection";
 import VisualizationSection from "../components/VisualizationSection";
 import AboutAuthorSection from "../components/AboutAuthorSection";
 import ComingSoonSection from "../components/ComingSoonSection";
+import ResearchPapersSection from "../components/ResearchPaperSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Container maxW="container.md" py={10} px={{ base: 4, md: 0 }}>
         <Stack gap={12}>
           <AboutPaperSection />
+          <ResearchPapersSection/>
           <VisualizationSection />
 
           <Stack

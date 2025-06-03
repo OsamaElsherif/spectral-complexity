@@ -1,4 +1,4 @@
-import { Box, Flex, Stack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Stack } from "@chakra-ui/react";
 import UMAPPlotCard from "./VisualHighlights/UMAPPlotCard";
 import MetricPlotCard from "./VisualHighlights/MetricPlotCard";
 import { ButtonLink } from "./RouterLinkButton";
@@ -8,6 +8,17 @@ export default function VisualizationSection() {
   return (
     <Flex direction="column" gap={8} px={{ base: 4, md: 8 }} py={10}>
       {/* Visualization Cards */}
+      <Heading
+        as="h2"
+        size="xl"
+        textAlign="center"
+        mb={-10}
+        fontSize={{ base: "2xl", md: "3xl" }}
+        fontFamily="Poppins"
+        fontWeight="bold"
+      >
+        Spectral Geometry of SAT Paper Visuals
+      </Heading>
       <Flex
         direction={{ base: "column", lg: "row" }}
         gap={5}

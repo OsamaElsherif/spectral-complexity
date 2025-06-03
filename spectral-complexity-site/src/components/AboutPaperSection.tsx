@@ -7,6 +7,9 @@ export default function AboutPaperSection() {
       mb={16}
       px={{ base: 4, md: 0 }}
     >
+
+      
+
       <Heading
         as="h2"
         size="xl"
