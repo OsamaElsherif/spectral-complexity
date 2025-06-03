@@ -40,18 +40,53 @@ The approach draws from:
 
 ---
 
-## 📜 Papers
+# 📜 Papers
 
-- **[Spectral Geometry of Boolean Satisfiability](https://www.researchgate.net/publication/392202309)**  
-  _Explores the SAT problem through Fourier-Walsh analysis and spectral manifolds._  
-  **Status:** Preprint (to appear on arXiv after endorsement)
+This repository contains the artifacts and code associated with a series of research papers exploring the spectral and geometric structure of Boolean satisfiability problems (SAT). The goal is to reframe complexity through a continuous, spectral-topological lens and construct a measurable geometry of problem hardness.
 
-Upcoming papers will generalize the approach to:
+---
 
-- 2-SAT and 4-SAT spectral maps
-- QBF (Quantified Boolean Formulas)
-- Neural networks as spectral systems
-- The foundations of Spectral Complexity Theory
+## Paper 1: Spectral Geometry of SAT
+
+**Title:** Spectral Geometry of Boolean Satisfiability: A Fourier-Walsh Perspective on Complexity Landscapes  
+**Link to Preprint:** [https://doi.org/10.13140/RG.2.2.34455.89765](https://doi.org/10.13140/RG.2.2.34455.89765)
+
+### Summary
+
+This paper introduces a novel spectral-topological framework for analyzing Boolean satisfiability (SAT) problems. By applying Fourier and Walsh–Hadamard transforms to logical formulas, it extracts spectral signatures that reveal the internal complexity structure of SAT instances.
+
+Key contributions include:
+- Continuous transformation of SAT formulas to \([-1,1]^n\) using Fourier-Walsh.
+- Extraction of spectral features (entropy, energy, variance).
+- Projection using UMAP to visualize separability between SAT and UNSAT instances.
+- Introduction of the concept of a **complexity manifold**, a continuous space encoding problem hardness.
+
+### Folders
+- `benchmarks`: Test SAT instances used for evaluation.
+- `datasets`: Generated or transformed spectral data.
+- `visualizations`: UMAP plots and cluster projections for complexity geometry.
+
+---
+
+## Paper 2: Separability Across k-SAT
+
+**Title:** Spectral Separation and Complexity Landscapes in SAT  
+**Link to Preprint:** [https://doi.org/10.13140/RG.2.2.31262.65605](https://doi.org/10.13140/RG.2.2.31262.65605)
+
+### Summary
+
+Building on the foundation laid in Paper 1, this work extends the spectral analysis across multiple levels of k-SAT (2-SAT, 3-SAT, 4-SAT). It tests the **continuity and geometric separability** of these instances within the proposed complexity manifold.
+
+Key contributions include:
+- Dynamic spectral feature extraction across varying clause counts.
+- Cross-instance UMAP projection for geometric analysis of separability.
+- Introduction of spectral deformation and match metrics to evaluate continuity.
+- Empirical evidence supporting the existence of a learnable geometric space of SAT complexity.
+
+### Folders
+- `benchmarks`: k-SAT benchmarks and experiments.
+- `datasets`: Fourier/Walsh-transformed data for multiple k-SAT levels.
+- `visualizations`: Comparative plots between 2-SAT, 3-SAT, and 4-SAT instances.
 
 ---
 
